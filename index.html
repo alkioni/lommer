@@ -2,34 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
   <title>Lommer — Product Design Studio</title>
   <meta name="description" content="Lommer is a product design studio. We design products and manage their production.">
+  <link rel="canonical" href="https://lommer.design/">
+  <meta name="author" content="Lommer">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Link previews (Facebook, WhatsApp, LinkedIn, iMessage…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lommer">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:url" content="https://lommer.design/">
+  <meta property="og:title" content="Lommer — Product Design Studio">
+  <meta property="og:description" content="Lommer is a product design studio. We design products and manage their production.">
+  <meta property="og:image" content="https://lommer.design/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hands holding a tan E.V.A. tote over red rocks">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lommer — Product Design Studio">
+  <meta name="twitter:description" content="Lommer is a product design studio. We design products and manage their production.">
+  <meta name="twitter:image" content="https://lommer.design/assets/img/og-image.jpg">
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=IBM+Plex+Sans+Condensed:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=16">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=IBM+Plex+Sans+Condensed:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=19">
+  <link rel="alternate" type="text/plain" href="https://lommer.design/llms.txt" title="Summary for AI agents">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lommer",
+    "url": "https://lommer.design/",
+    "image": "https://lommer.design/assets/img/og-image.jpg",
+    "description": "Product design studio based in Greece, founded in 2015. We design physical products for brands and companies, from first concept to a finished, delivered batch, and manage production with manufacturers in Europe.",
+    "foundingDate": "2015",
+    "founder": { "@type": "Person", "name": "Alkioni Matsourdeli", "jobTitle": "Founder and product designer" },
+    "address": { "@type": "PostalAddress", "addressCountry": "GR" },
+    "email": "hello@lommer.gr",
+    "telephone": "+306973232662",
+    "logo": "https://lommer.design/assets/img/logo-black.png",
+    "sameAs": [
+      "https://www.instagram.com/lommer.design/",
+      "https://www.facebook.com/lommerofficial",
+      "https://gr.pinterest.com/lommerdesign/"
+    ],
+    "knowsAbout": ["Product design", "E.V.A. bags and accessories", "Upcycled products", "Corporate and event products", "Production management"],
+    "award": ["Bronze, International Design Awards 2017 (EvaPack)", "Silver, A' Design Award 2016 (EvaTwo)"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bespoke products", "description": "For a brand or company, from first concept to finished batch." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate & event products", "description": "Objects and accessories for brand events, campaigns and clients." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Upcycled products", "description": "Made from a manufacturer's own materials and production offcuts." } }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 
 <aside class="side" id="nav">
-  <a href="#top" class="side__logo"><img src="assets/img/logo-black.png" alt="Lommer"></a>
+  <a href="#top" class="side__logo"><img src="assets/img/logo-black.png" alt="Lommer" width="150" height="21"></a>
   <p class="side__claim">Product design studio.</p>
-  <nav class="side__nav">
+  <nav class="side__nav" aria-label="Sections">
     <a href="#what">What we do</a>
     <a href="#clients">Client work</a>
     <a href="#work">Our collection</a>
     <a href="#studio">Studio</a>
     <a href="#contact">Contact</a>
   </nav>
-  <div class="side__social">
+  <div class="side__social" role="group" aria-label="Social media">
     <a href="https://www.instagram.com/lommer.design/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
     <a href="https://www.facebook.com/lommerofficial" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
     <a href="https://gr.pinterest.com/lommerdesign/" target="_blank" rel="noopener" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg></a>
   </div>
 </aside>
 
-<main class="main" id="top">
+<main class="main" id="top" tabindex="-1">
 
   <!-- ENTRY -->
   <section class="entry">
@@ -44,15 +103,15 @@
     <p class="text reveal">Most projects start with a practical question: what can be made from this material, how can this idea become a real object, how can this product be reworked.</p>
 
     <div class="row row--3">
-      <figure class="cap reveal"><div class="img"><img src="assets/img/studio-tools.webp" alt="Drawing tools" loading="lazy"></div><figcaption>Research</figcaption></figure>
-      <figure class="cap reveal"><div class="img"><img src="assets/img/proc-research.webp" alt="Pattern drawing" loading="lazy"></div><figcaption>Design</figcaption></figure>
-      <figure class="cap reveal"><div class="img"><img src="assets/img/studio-fold.webp" alt="Folding a sample" loading="lazy"></div><figcaption>Prototyping</figcaption></figure>
+      <figure class="cap reveal"><div class="img"><img src="assets/img/studio-tools.webp" alt="Drawing tools" loading="lazy" decoding="async"></div><figcaption>Research</figcaption></figure>
+      <figure class="cap reveal"><div class="img"><img src="assets/img/proc-research.webp" alt="Pattern drawing" loading="lazy" decoding="async"></div><figcaption>Design</figcaption></figure>
+      <figure class="cap reveal"><div class="img"><img src="assets/img/studio-fold.webp" alt="Folding a sample" loading="lazy" decoding="async"></div><figcaption>Prototyping</figcaption></figure>
     </div>
     <p class="text reveal">We research the brand, the user and the material, design the product and make the prototypes. Then we take charge of production with manufacturers in Europe, and handle quality control, packaging and delivery.</p>
     <div class="row row--3">
-      <figure class="cap reveal"><div class="img"><img src="assets/img/proc-prototype.webp" alt="Prototype tested in the sea" loading="lazy"></div><figcaption>Testing</figcaption></figure>
-      <figure class="cap reveal"><div class="img"><img src="assets/img/proc-production.webp" alt="Snap button press" loading="lazy"></div><figcaption>Production</figcaption></figure>
-      <figure class="cap reveal"><div class="img"><img src="assets/img/packaging.webp" alt="Packaging" loading="lazy"></div><figcaption>Packaging &amp; delivery</figcaption></figure>
+      <figure class="cap reveal"><div class="img"><img src="assets/img/proc-prototype.webp" alt="Prototype tested in the sea" loading="lazy" decoding="async"></div><figcaption>Testing</figcaption></figure>
+      <figure class="cap reveal"><div class="img"><img src="assets/img/proc-production.webp" alt="Snap button press" loading="lazy" decoding="async"></div><figcaption>Production</figcaption></figure>
+      <figure class="cap reveal"><div class="img"><img src="assets/img/packaging.webp" alt="Packaging" loading="lazy" decoding="async"></div><figcaption>Packaging &amp; delivery</figcaption></figure>
     </div>
 
     <ol class="forms">
@@ -69,7 +128,7 @@
 
     <!-- Each story: photo, name, type of work, the request, what we did, quantity. -->
     <article class="story reveal">
-      <figure class="img"><img src="assets/img/brand-loreal.webp" alt="L’Oréal promotional cotton bag" loading="lazy" class="contain"></figure>
+      <figure class="img"><img src="assets/img/brand-loreal.webp" alt="L’Oréal promotional cotton bag" loading="lazy" decoding="async" class="contain"></figure>
       <div class="story__body">
         <h3 class="story__name">L’Oréal</h3>
         <p class="story__tag">Promotional bags</p>
@@ -81,7 +140,7 @@
       </div>
     </article>
     <article class="story story--flip reveal">
-      <figure class="img"><img src="assets/img/brand-schweppes.webp" alt="Schweppes event accessories on branded cards" loading="lazy"></figure>
+      <figure class="img"><img src="assets/img/brand-schweppes.webp" alt="Schweppes event accessories on branded cards" loading="lazy" decoding="async"></figure>
       <div class="story__body">
         <h3 class="story__name">Schweppes</h3>
         <p class="story__tag">Event keyrings</p>
@@ -134,21 +193,21 @@
     <h2 class="h reveal">Our collection</h2>
     <p class="text text--lg reveal">EvaFamily, our philosophy in action</p>
     <p class="text reveal">Our own collection, launched in 2015 and including our award-winning pieces, shows how we think and work.</p>
-    <figure class="img img--wide reveal"><img src="assets/img/court-evapack.webp" alt="EvaPack bags on a purple court" loading="lazy"></figure>
+    <figure class="img img--wide reveal"><img src="assets/img/court-evapack.webp" alt="EvaPack bags on a purple court" loading="lazy" decoding="async"></figure>
 
     <div class="trio">
       <article class="reveal">
-        <figure class="img"><img src="assets/img/material-speckle.webp" alt="Speckled recycled E.V.A." loading="lazy"></figure>
+        <figure class="img"><img src="assets/img/material-speckle.webp" alt="Speckled recycled E.V.A." loading="lazy" decoding="async"></figure>
         <h3 class="h3">We started from the material.</h3>
         <p class="text">We chose E.V.A. for what it does: lightweight, durable, waterproof, easy to clean. In recent years we moved to E.V.A. with recycled content recovered from the supplier’s own production waste.</p>
       </article>
       <article class="reveal">
-        <figure class="img"><img src="assets/img/snap-closeup.webp" alt="Snap button holding folded E.V.A." loading="lazy"></figure>
+        <figure class="img"><img src="assets/img/snap-closeup.webp" alt="Snap button holding folded E.V.A." loading="lazy" decoding="async"></figure>
         <h3 class="h3">We built for strength.</h3>
         <p class="text">Stitching perforated E.V.A. and it tore along the seam. So we developed a construction where flat E.V.A. is folded into shape and held together by snap buttons, made for us by YKK. There is not a single stitch.</p>
       </article>
       <article class="reveal">
-        <figure class="img"><img src="assets/img/zerowaste-bracelets.webp" alt="Bracelets made from leftover material" loading="lazy"></figure>
+        <figure class="img"><img src="assets/img/zerowaste-bracelets.webp" alt="Bracelets made from leftover material" loading="lazy" decoding="async"></figure>
         <h3 class="h3">We wasted less.</h3>
         <p class="text">Every product was made to order, and leftover material became keyrings and bracelets. Packaging was designed to be reused too, in recycled paper or cotton fabric from a Greek producer.</p>
       </article>
@@ -158,13 +217,13 @@
     <p class="text text--lg products__lead reveal">Every product started from a single idea.</p>
     <div class="products">
       <article class="product product--award reveal">
-        <figure class="img"><img src="assets/img/evapack-studio.webp" alt="EvaPack" loading="lazy"></figure>
+        <figure class="img"><img src="assets/img/evapack-studio.webp" alt="EvaPack" loading="lazy" decoding="async"></figure>
         <h3 class="h3">EvaPack</h3>
         <p class="small">Bronze · International Design Awards 2017</p>
         <p class="text">We wanted a bag that protects its contents without a zip or a lock. A sailing rope passes through itself to form the handle, secure the contents and keep the shoulder straps even, with no extra parts. It is designed as an anti-theft solution.</p>
       </article>
       <article class="product product--award reveal">
-        <figure class="img"><img src="assets/img/evatwo-mosaic.webp" alt="EvaTwo" loading="lazy"></figure>
+        <figure class="img"><img src="assets/img/evatwo-mosaic.webp" alt="EvaTwo" loading="lazy" decoding="async"></figure>
         <h3 class="h3">EvaTwo</h3>
         <p class="small">Silver · A’ Design Award, 2016 · Fashion &amp; Travel Accessories Design</p>
         <p class="text">A lightweight tote made from a single sheet of E.V.A. and automotive seatbelt webbing. The strap carries the weight and the user can change it easily, to suit their mood.</p>
@@ -244,7 +303,7 @@
   </footer>
 </main>
 
-<div class="lb" id="lb" hidden><img alt=""><button aria-label="Close">×</button></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged photo" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
 
 <script src="assets/js/main.js" defer></script>
 <script>
@@ -260,15 +319,34 @@
   };
   addEventListener('scroll', spy, { passive: true }); spy();
 
-  // Lightbox
-  const lb = document.getElementById('lb'), big = lb.querySelector('img');
+  // Lightbox: works with mouse, touch and keyboard (Enter/Space to open, Esc to close)
+  const lb = document.getElementById('lb'), big = lb.querySelector('img'), closeBtn = lb.querySelector('button');
+  let opener = null;
+  const open = img => {
+    opener = img;
+    big.src = img.currentSrc || img.src; big.alt = img.alt;
+    lb.hidden = false; document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  };
+  const close = () => {
+    if (lb.hidden) return;
+    lb.hidden = true; document.body.style.overflow = '';
+    if (opener) opener.focus();
+  };
   document.querySelectorAll('.main .img img').forEach(img => {
     img.style.cursor = 'zoom-in';
-    img.addEventListener('click', () => { big.src = img.currentSrc || img.src; big.alt = img.alt; lb.hidden = false; });
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-label', 'Enlarge photo: ' + img.alt);
+    img.addEventListener('click', () => open(img));
+    img.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); } });
   });
-  const close = () => { lb.hidden = true; };
   lb.addEventListener('click', close);
-  addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  addEventListener('keydown', e => {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
+  });
 })();
 </script>
 </body>
