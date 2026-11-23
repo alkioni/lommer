@@ -179,3 +179,12 @@ body { font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 /* Services: small grey line under a name */
 .forms__sub { grid-column: 2; display: block; margin-top: 6px; font-size: 15px; font-weight: 400; color: var(--ink-2); line-height: 1.4; }
+
+/* Client work: type of work under the name */
+.story__tag { margin: 0 0 28px; font-family: "IBM Plex Sans Condensed", sans-serif; font-size: 12px; letter-spacing: .28em; text-transform: uppercase; color: var(--ink-2); }
+
+/* Sidebar footer: social icons */
+.side__social { margin-top: auto; display: flex; gap: 16px; }
+.side__social a { display: block; width: 20px; height: 20px; color: var(--ink-2); transition: color .2s; }
+.side__social a:hover { color: var(--ink); }
+.side__social svg { display: block; width: 100%; height: 100%; }
