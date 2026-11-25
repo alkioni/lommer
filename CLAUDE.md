@@ -7,7 +7,7 @@ One-page static site for Lommer, a product design studio. No build step.
 - `assets/img/`: images (WebP). `assets/js/main.js`: scroll reveal.
 - Live address: https://lommer.design/
 - `llms.txt`, `robots.txt`: files for AI agents and crawlers.
-- `favicon.ico`, `assets/img/favicon-32.png`, `assets/img/apple-touch-icon.png`: icons. `assets/img/og-image.jpg` (1200×630): the picture shown in link previews.
+- `favicon.ico`, `assets/img/favicon-32.png`, `assets/img/favicon-48.png` (source, from the studio), `assets/img/apple-touch-icon.png`: icons. `assets/img/og-image.jpg` (1200×630): the picture shown in link previews.
 
 ## Keep the agent files in sync (required)
 
