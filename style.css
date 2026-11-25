@@ -194,6 +194,19 @@ body { font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; }
 .product__badge { position: absolute; top: 16px; left: 16px; z-index: 1; width: auto; height: 64px; pointer-events: none; }
 @media (max-width: 900px) { .product__badge { top: 12px; left: 12px; height: 52px; } }
 
+/* Featured in: grey press logos linking to the articles */
+.press { align-items: start; }
+.press__item { display: block; }
+/* every logo sits in the same 28px band, aligned to its bottom edge */
+.press__logo { display: block; width: auto; max-width: 100%; margin: 0 0 14px; opacity: .85; transition: opacity .2s; object-fit: contain; object-position: left bottom; }
+/* sizes balanced by eye; letter baselines share one line (24px band), text starts 38px below the band top */
+.press__logo--dm { height: 22px; margin-top: 4px; margin-bottom: 12px; }
+.press__logo--tgf { height: 13px; margin-top: 11px; margin-bottom: 14px; }
+.press__logo--ds { height: 14px; margin-top: 10px; margin-bottom: 14px; }
+.press__item:hover .press__logo { opacity: 1; }
+.press__item:hover span { color: var(--ink); }
+.press__item span { transition: color .2s; }
+
 /* ---------- Mobile & tablet ---------- */
 /* Zoom-on-hover only where there is a real mouse */
 @media (hover: none) { .img:hover img { transform: none; } }
