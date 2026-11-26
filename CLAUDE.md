@@ -4,7 +4,7 @@ One-page static site for Lommer, a product design studio. No build step.
 
 - `index.html`: the whole page (sections: What we do, Client work, Our collection, Featured in, Studio, Contact).
 - `style.css`: all styles. Mobile and tablet rules are in the "Mobile & tablet" block at the end (breakpoints 900px and 640px).
-- `assets/img/`: images (WebP). `assets/js/main.js`: scroll reveal and footer year. `assets/js/product-3d.js`: the 3D turn on the collection photos.
+- `assets/img/`: images (WebP). `assets/js/main.js`: scroll reveal and footer year. `assets/js/product-3d.js`: the 3D turn on the collection photos. `assets/js/intro.js`: the "Fold open" loading screen. `assets/js/consent.js`: cookie banner + Google Analytics. `privacy.html`: privacy page.
 - `tools/`: helper scripts, not part of the published site.
 - Live address: https://lommer.design/
 - `llms.txt`, `robots.txt`: files for AI agents and crawlers.
@@ -54,4 +54,17 @@ Product photos must be on the plain #EFEFEF background. Settings used so far (da
 ## Publishing zip
 
 `lommer-site.zip` holds only the files the page uses (every `src`, `href` and `data-depth` in `index.html`, plus `og-image.jpg`, `llms.txt`, `robots.txt`). Rebuild it after any change that is meant to be published.
+
+## Intro ("Fold open" loading screen)
+
+`#ldr` at the top of `<body>`, styled in the "Intro" block of `style.css`, run by `assets/js/intro.js`. A small inline script in `<head>` adds the class `intro` to `<html>` only on the first page view of a visit (sessionStorage key `lommer-intro`) and never with "Reduce motion"; without that class the screen is not shown. It lasts at least 2.2 s, waits for the page to load but never more than 6 s, and CSS hides it after 7 s even if the script fails. Keep these safeguards if you change it. Other designs that were tried are kept outside the repo in `~/Desktop/lommer-loaders`.
+
+## Analytics and cookie consent
+
+Google Analytics 4, Measurement ID `G-11KTFZB0KQ` (property "lommer.design - GA4"), set in `assets/js/consent.js`.
+
+- Analytics is **only loaded after the visitor clicks Accept** in the cookie banner (GDPR). Never add the Google tag directly to the HTML.
+- The choice is kept in localStorage (`lommer-consent`). "Cookie settings" in the footer (`data-consent-open`) reopens the banner; Decline switches analytics off and deletes the `_ga` cookies.
+- On localhost the tag is held back, so testing doesn't add visits to the real property.
+- If tracking changes (new tools, new cookies), update `privacy.html` (what is collected, the cookie table, "Last updated").
 
